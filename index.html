@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid my-4">
+      <!-- Creating a Title of form -->
+      <h1 id="title" class="text-center">ALUMNI MEET FORM</h1>
+      <!-- Description of form -->
+      <p id="description" class="text-center">Form filling for Alumni Meet</p>
+      <form id="form" class="bg-white my-4">
+        <div class="form-row">
+          <!-- First-Name input and required field -->
+          <div class="form-group col-md-5">
+            <label for="FirstName" class="required">First-Name</label>
+            <input
+              type="FirstName"
+              class="form-control"
+              id="first-name"
+              placeholder="First-Name"
+              required
+            />
+          </div>
+          <div class="form-group col-md-5">
+            <!-- Last-Name input and required field -->
+            <label for="LastName" class="required">Last-Name</label>
+            <input
+              type="LastName"
+              class="form-control"
+              id="last-name"
+              placeholder="Last-Name"
+              required
+            />
+          </div>
+        </div>
+        <fieldset class="form-group row">
+          <!-- Gender creating with radio button -->
+          <legend class="col-form-label col-sm-2 float-sm-left pt-0 required">
+            Gender
+          </legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="Gender"
+                id="gender"
+                value="Male"
+                checked
+              />
+              <label class="form-check-label" for="gridRadios1"> Male </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="Gender"
+                id="gender"
+                value="Female"
+              />
+              <label class="form-check-label" for="gridRadios2"> Female </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="form-group">
+          <!-- creating Address Text area -->
+          <label for="inputAddress" class="required">Address</label>
+          <textarea
+            name=""
+            class="form-control col-md-10"
+            id="address"
+            cols="30"
+            rows="3"
+            placeholder="address"
+          >
+address</textarea
+          >
+        </div>
+
+        <div class="form-row">
+          <!-- creating city input  -->
+          <div class="form-group col-md-4">
+            <label for="inputCity" class="required">City</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="city"
+              id="inputCity"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <!-- selecting state with options -->
+            <label for="inputState" class="required">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option value="Andhra Pradesh">Andhra Pradesh (Amaravati)</option>
+              <option value="Arunachal Pradesh">
+                Arunachal Pradesh (Itanagar)
+              </option>
+              <option value="Assam">Assam (Dispur)</option>
+              <option value="Bihar">Bihar (Patna)</option>
+              <option value="Chhattisgarh">Chhattisgarh (Raipur)</option>
+              <option value="Goa">Goa (Panaji)</option>
+              <option value="Gujarat">Gujarat (Gandhinagar)</option>
+              <option value="Haryana">Haryana (Chandigarh)</option>
+              <option value="Himachal Pradesh">
+                Himachal Pradesh (Shimla)
+              </option>
+              <option value="Jharkhand">Jharkhand (Ranchi)</option>
+              <option value="Karnataka">Karnataka (Bangalore)</option>
+              <option value="Kerala">Kerala (Thiruvananthapuram)</option>
+              <option value="Madhya Pradesh">Madhya Pradesh (Bhopal)</option>
+              <option value="Maharashtra">Maharashtra (Mumbai)</option>
+              <option value="Manipur">Manipur (Imphal)</option>
+              <option value="Meghalaya">Meghalaya (Shillong)</option>
+              <option value="Mizoram">Mizoram (Aizawl)</option>
+              <option value="Nagaland">Nagaland (Kohima)</option>
+              <option value="Odisha">Odisha (Bhubaneshwar)</option>
+              <option value="Punjab">Punjab (Chandigarh)</option>
+              <option value="Rajasthan">Rajasthan (Jaipur)</option>
+              <option value="Sikkim">Sikkim (Gangtok)</option>
+              <option value="Tamil Nadu">Tamil Nadu (Chennai)</option>
+              <option value="Telangana">Telangana (Hyderabad)</option>
+              <option value="Tripura">Tripura (Agartala)</option>
+              <option value="Uttarakhand">Uttarakhand (Dehradun)</option>
+              <option value="Uttar Pradesh">Uttar Pradesh (Lucknow)</option>
+              <option value="West Bengal">West Bengal (Kolkata)</option>
+              <option value="Andaman and Nicobar Islands">
+                Andaman and Nicobar Islands (Port Blair)
+              </option>
+              <option value="Chandigarh">Chandigarh (Chandigarh)</option>
+              <option value="Dadra and Nagar Haveli and Daman & Diu">
+                Dadra and Nagar Haveli and Daman & Diu (Daman)
+              </option>
+              <option value="The Government of NCT of Delhi">
+                The Government of NCT of Delhi (Delhi)
+              </option>
+              <option value="Jammu & Kashmir">
+                Jammu & Kashmir (Srinagar-S*, Jammu-W*)
+              </option>
+              <option value="Ladakh">Ladakh (Leh)</option>
+              <option value="Lakshadweep">Lakshadweep (Kavaratti)</option>
+              <option value="Puducherry">Puducherry (Puducherry)</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3">
+            <label for="inputCity" class="required">Country</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="country"
+              id="inputCountry"
+            />
+          </div>
+          <!-- creating input pincode-->
+          <div class="form-group col-md-3">
+            <label for="inputZip">Pincode</label>
+
+            <input
+              type="text"
+              pattern="[0-9]+"
+              inputmode="numeric"
+              class="form-control"
+              id="pincode"
+              placeholder="pincode"
+              required
+            />
+          </div>
+        </div>
+        <!-- selecting choice of food default two items is selected -->
+        <div class="form-group">
+          <label for="gridCheck1">Choice Of Food</label>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="cof"
+                value="southIndian"
+                type="checkbox"
+                id="gridCheck1"
+                checked
+              />
+              <label class="form-check-label" for="gridCheck1">
+                South Indian</label
+              >
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="cof"
+                value="NorthIndian"
+                type="checkbox"
+                id="gridCheck1"
+                checked
+              />
+              <label class="form-check-label" for="gridCheck1">
+                North Indian
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="cof"
+                value="chinese"
+                type="checkbox"
+                id="gridCheck1"
+              />
+              <label class="form-check-label" for="gridCheck1"> Chinese </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="cof"
+                value="italian"
+                type="checkbox"
+                id="gridCheck1"
+              />
+              <label class="form-check-label" for="gridCheck1"> Italian </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                name="cof"
+                value="thai"
+                type="checkbox"
+                id="gridCheck1"
+              />
+              <label class="form-check-label" for="gridCheck1"> Thai </label>
+            </div>
+          </div>
+        </div>
+        <!-- submit button with eventlistener to add datas to tables -->
+        <button type="button" id="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+      <!-- creating table -->
+      <table id="tableset" class="table table-striped table-dark my-5">
+        <thead>
+          <tr>
+            <!-- <th scope="col">S.No</th> -->
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Pincode</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Food</th>
+            <th scope="col">State</th>
+            <th scope="col">Country</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
