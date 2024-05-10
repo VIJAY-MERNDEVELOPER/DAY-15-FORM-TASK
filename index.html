@@ -22,11 +22,13 @@
       <h1 id="title" class="text-center">ALUMNI MEET FORM</h1>
       <!-- Description of form -->
       <p id="description" class="text-center">Form filling for Alumni Meet</p>
-      <form id="form" class="bg-white my-4">
+      <form id="survey-form" class="bg-white my-4">
         <div class="form-row">
           <!-- First-Name input and required field -->
           <div class="form-group col-md-5">
-            <label for="FirstName" class="required">First-Name</label>
+            <label for="FirstName" id="name-label" class="required"
+              >First-Name</label
+            >
             <input
               type="FirstName"
               class="form-control"
@@ -47,6 +49,17 @@
             />
           </div>
         </div>
+        <div class="mb-3">
+          <label for="email" id="email-label" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control col-md-10"
+            id="email"
+            placeholder="Enter Email"
+          />
+        </div>
         <fieldset class="form-group row">
           <!-- Gender creating with radio button -->
           <legend class="col-form-label col-sm-2 float-sm-left pt-0 required">
@@ -58,7 +71,7 @@
                 class="form-check-input"
                 type="radio"
                 name="Gender"
-                id="gender"
+                id="genderMale"
                 value="Male"
                 checked
               />
@@ -69,7 +82,7 @@
                 class="form-check-input"
                 type="radio"
                 name="Gender"
-                id="gender"
+                id="genderFemale"
                 value="Female"
               />
               <label class="form-check-label" for="gridRadios2"> Female </label>
@@ -82,7 +95,7 @@
           <textarea
             name=""
             class="form-control col-md-10"
-            id="address"
+            id="comments"
             cols="30"
             rows="3"
             placeholder="address"
@@ -262,7 +275,7 @@ address</textarea
           </div>
         </div>
         <!-- submit button with eventlistener to add datas to tables -->
-        <button type="button" id="submit" class="btn btn-primary">
+        <button type="submit" id="submit" class="btn btn-primary">
           Submit
         </button>
       </form>
