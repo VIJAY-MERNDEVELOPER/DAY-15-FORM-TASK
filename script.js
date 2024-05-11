@@ -3,8 +3,9 @@
 let submit = document.querySelector(".btn");
 let firstName = document.querySelector("#first-name");
 let LastName = document.querySelector("#last-name");
+let email = document.querySelector("#email");
 let gender = document.querySelector("input[name='Gender']:checked");
-let address = document.querySelector("#address");
+let address = document.querySelector("#comments");
 let city = document.querySelector("#inputCity");
 let state = document.querySelector("#inputState");
 let country = document.querySelector("#inputCountry");
@@ -29,6 +30,7 @@ submit.addEventListener("click", function getDetails(e) {
   
 <td>${firstName.value}</td>
 <td>${LastName.value}</td>
+<td>${email.value}</td>
 <td>${address.value}</td>
 <td>${pincode.value}</td>
 <td>${gender.value}</td>
@@ -39,6 +41,7 @@ submit.addEventListener("click", function getDetails(e) {
 
   firstName.value = " ";
   LastName.value = " ";
+  email.value = " ";
   address.value = " ";
   pincode.value = " ";
   choiceOfFood;
